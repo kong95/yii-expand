@@ -11,6 +11,18 @@ use yii\web\HttpException;
 class ErrorHandler extends \yii\web\ErrorHandler
 {
 
+
+    /**
+     *
+     *  config/main.php
+     * 'components'=>[
+     *      'errorHandler'=>[
+     *          'class'=>'Kong95\Yii\Kernel\ErrorHandler'
+     *      ]
+     * ]
+     * @param \Error|\Exception $exception
+     * @return array
+     */
     protected function convertExceptionToArray($exception)
     {
         $instanced = $exception instanceof Exception;
@@ -49,7 +61,6 @@ class ErrorHandler extends \yii\web\ErrorHandler
         if (($prev = $exception->getPrevious()) !== null) {
             $array['previous'] = $this->convertExceptionToArray($prev);
         }
-        Yii::debug($array);
         return $array;
     }
 

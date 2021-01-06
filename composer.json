@@ -1,0 +1,19 @@
+{
+    "name": "kong95/yii-expand",
+    "description": "a yii2 expand",
+    "authors": [
+        {
+            "name": "kong95",
+            "email": "272344701@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "kong95/tools": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kong95\\": "src"
+        }
+    }
+}

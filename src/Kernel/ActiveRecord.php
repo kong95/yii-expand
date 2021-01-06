@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Kong95\Kernel;
+namespace Kong95\Yii\Kernel;
 
 
 use Yii;
-use Kong95\Traits\ActiveRecordTrait;
+use Kong95\Yii\Traits\ActiveRecordTrait;
 
 abstract class ActiveRecord extends \yii\db\ActiveRecord
 {

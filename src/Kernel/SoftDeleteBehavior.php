@@ -1,6 +1,6 @@
 <?php
 
-namespace Kong95\Kernel;
+namespace Kong95\Yii\Kernel;
 
 use yii\base\Behavior;
 use yii\base\ModelEvent;

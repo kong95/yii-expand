@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Kong95\Kernel;
+namespace Kong95\Yii\Kernel;
 
 
 abstract class Model extends \yii\base\Model

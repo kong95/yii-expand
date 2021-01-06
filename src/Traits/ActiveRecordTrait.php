@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Kong95\Traits;
+namespace Kong95\Yii\Traits;
 
 use Yii;
-use Kong95\Kernel\ActiveRecord;
+use Kong95\Yii\Kernel\ActiveRecord;
 use yii\behaviors\AttributeBehavior;
-use Kong95\Kernel\SoftDeleteBehavior;
+use Kong95\Yii\Kernel\SoftDeleteBehavior;
 
 trait ActiveRecordTrait
 {

@@ -1,2 +1,4 @@
 # yii-expand
-yii2 expand
+```
+composer require kong95/yii-expand
+```

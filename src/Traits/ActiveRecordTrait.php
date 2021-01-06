@@ -105,7 +105,7 @@ trait ActiveRecordTrait
      * @param array $params
      * @return int
      */
-    public static function deleteAll($condition = null, $params = [])
+    public static function deleteAll($condition = '', $params = [])
     {
         $attributes = ['status' => ActiveRecord::DELETE];
         return static::updateAll($attributes, $condition, $params);

@@ -1,9 +1,11 @@
 {
     "name": "kong95/yii-expand",
     "description": "a yii2 expand",
+    "type": "library",
+    "license": "MIT",
     "authors": [
         {
-            "name": "kong95",
+            "name": "kong",
             "email": "272344701@qq.com"
         }
     ],

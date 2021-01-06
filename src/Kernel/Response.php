@@ -16,7 +16,7 @@ class Response
      *          'class' => 'yii\web\Response',
      *          'charset' => 'UTF-8',
      *          'on beforeSend' => function ($event) {
-     *              \Kong95\Kernel\Response::api($event)
+     *              \Kong95\Yii\Kernel\Response::api($event)
      *          }
      *      ]
      * ]

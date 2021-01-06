@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kong95\\": "src"
+            "Kong95\\Yii\\": "src"
         }
     }
 }

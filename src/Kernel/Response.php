@@ -27,21 +27,18 @@ class Response
     {
         /** @var \yii\web\Response  $response*/
         $response = $event->sender;
-        if(
-            $response->format==\yii\web\Response::FORMAT_JSON
-            || $response->format==\yii\web\Response::FORMAT_XML
-        ){
-            if($response->isOk){
-                $data['code'] = $response->statusCode;
-                $data['message'] = $response->statusText;
-                is_null($response->data) || $data['data'] = $response->data;
-            }else{
-                $data['code'] = $response->data['code'];
-                $data['message'] = $response->data['message'];
-                YII_DEBUG && $data['data'] = $response->data;
-            }
-            $response->statusCode = 200;
-            $response->data = $data;
+        $response->format=\yii\web\Response::FORMAT_JSON;
+
+        if($response->isOk){
+            $data['code'] = $response->statusCode;
+            $data['message'] = $response->statusText;
+            is_null($response->data) || $data['data'] = $response->data;
+        }else{
+            $data['code'] = $response->data['code'];
+            $data['message'] = $response->data['message'];
+            YII_DEBUG && $data['data'] = $response->data;
         }
+        $response->statusCode = 200;
+        $response->data = $data;
     }
 }

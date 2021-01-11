@@ -10,7 +10,7 @@ trait ModelTrait
     /**
      * @return string
      */
-    public function getFirstError(): string
+    public function getError(): string
     {
         $errors = array_values($this->firstErrors);
         return reset($errors);

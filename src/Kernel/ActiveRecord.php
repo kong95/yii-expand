@@ -5,10 +5,12 @@ namespace Kong95\Yii\Kernel;
 
 
 use Yii;
+use Kong95\Yii\Traits\ModelTrait;
 use Kong95\Yii\Traits\ActiveRecordTrait;
 
 abstract class ActiveRecord extends \yii\db\ActiveRecord
 {
+    use ModelTrait;
     use ActiveRecordTrait;
 
     //启用
